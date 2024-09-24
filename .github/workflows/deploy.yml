@@ -40,7 +40,7 @@ jobs:
     - name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v0
       with:
-        credentials_json: '${{ secrets.GCP_SA_KEY }}'  # Your service account key
+        credentials_json: '${{ secrets.GCP_SA_KEY }}'  
 
     - name: Run tests
       run: |
@@ -51,7 +51,7 @@ jobs:
     - name: Deploy to Google App Engine
       uses: google-github-actions/deploy-appengine@v1
       with:
-        project_id: ${{ secrets.GCP_PROJECT_ID }}  # Your GCP project ID
+        project_id: ${{ secrets.GCP_PROJECT_ID }}  
         deliverables: app.yaml
         env_vars: |
           DATABASE_NAME=${{ secrets.DATABASE_NAME }}
