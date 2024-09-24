@@ -34,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -46,14 +46,13 @@ INSTALLED_APPS = [
 
     'orders',
     
-    'oauth2_provider',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
-    'rest_auth',
-    'rest_framework',
+    'allauth.socialaccount.providers.google',    
+    
+   
 ]
 
 MIDDLEWARE = [
@@ -109,7 +108,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 2
+SITE_ID = 3
 
 
 SOCIALACCOUNT_PROVIDERS = {
