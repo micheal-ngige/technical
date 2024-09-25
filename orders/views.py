@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Customer, Order
 from .serializers import CustomerSerializer, OrderSerializer
 
-# Initialize Africa's Talking SMS service with your credentials
+# Initializing Africa's Talking SMS service with credentials
 africastalking.initialize(username=settings.USERNAME, api_key=settings.API_KEY)
 sms = africastalking.SMS
 
