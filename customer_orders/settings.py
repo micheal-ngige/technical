@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'customer_orders.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-
+#db connections 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
