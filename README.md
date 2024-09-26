@@ -88,7 +88,7 @@ To run the unit tests for the project, use a coverage tool to run tests and gene
 Ensure the Google Cloud SDK is installed and authenticated.
 
 ### 2. **App Configuration**
-Ensure your `app.yaml` file is correctly set up for App Engine deployment.
+Ensure your `app.yaml` and `deploy.yml`files are correctly set up for App Engine deployment.
 
 ### 3. **Deploy to Google App Engine**
 Deploy the app using Google Cloud CLI.
